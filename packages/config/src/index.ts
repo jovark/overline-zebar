@@ -16,4 +16,5 @@ export type {
   RootConfig,
   Theme,
   WeatherThreshold,
+  WorkspacesSettings,
 } from './types';

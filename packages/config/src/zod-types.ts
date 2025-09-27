@@ -77,3 +77,7 @@ export const RootConfigSchema = z.object({
   app: AppSettingsSchema,
   widgets: AllWidgetSettingsSchema.partial(),
 });
+
+export const WorkspacesSchema = z.object({
+  workspacesEnabled: z.boolean().default(true),
+});

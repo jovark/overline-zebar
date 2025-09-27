@@ -23,9 +23,15 @@ export function MainSettings() {
           />
           <TabsList className="mt-4 mb-1">
             <TabsTrigger value="general">General</TabsTrigger>
-            <TabsTrigger value="time">Time</TabsTrigger>
+            <TabsTrigger value="script">Script</TabsTrigger>
+            <TabsTrigger value="tiling-direction">Tiling Direction</TabsTrigger>
+            <TabsTrigger value="workspaces">Workspaces</TabsTrigger>
+            <TabsTrigger value="current-window">Current Window Display</TabsTrigger>
             <TabsTrigger value="system-stats">Stats</TabsTrigger>
+            <TabsTrigger value="volume">Volume</TabsTrigger>
             <TabsTrigger value="systray">System Tray</TabsTrigger>
+            <TabsTrigger value="time">Time</TabsTrigger>
+            <TabsTrigger value="power">Power</TabsTrigger>
           </TabsList>
           <div className="w-full bg-text/5 h-px my-4 mb-6"></div>
 
@@ -36,7 +42,25 @@ export function MainSettings() {
             <GeneralTab />
           </TabsContent>
           <TabsContent
-            value="time"
+            value="script"
+            className="space-y-8 overflow-y-auto min-h-0"
+          >
+            <TimeTab />
+          </TabsContent>
+          <TabsContent
+            value="tiling-direction"
+            className="space-y-8 overflow-y-auto min-h-0"
+          >
+            <TimeTab />
+          </TabsContent>
+          <TabsContent
+            value="workspaces"
+            className="space-y-8 overflow-y-auto min-h-0"
+          >
+            <TimeTab />
+          </TabsContent>
+          <TabsContent
+            value="temp"
             className="space-y-8 overflow-y-auto min-h-0"
           >
             <TimeTab />
@@ -48,10 +72,28 @@ export function MainSettings() {
             <SystemStatsTab />
           </TabsContent>
           <TabsContent
+            value="volume"
+            className="space-y-8 overflow-y-auto min-h-0"
+          >
+            <TimeTab />
+          </TabsContent>
+          <TabsContent
             value="systray"
             className="flex flex-col flex-grow space-y-8 overflow-y-auto min-h-0"
           >
             <SystrayTab />
+          </TabsContent>
+          <TabsContent
+            value="time"
+            className="space-y-8 overflow-y-auto min-h-0"
+          >
+            <TimeTab />
+          </TabsContent>
+          <TabsContent
+            value="power"
+            className="space-y-8 overflow-y-auto min-h-0"
+          >
+            <TimeTab />
           </TabsContent>
         </div>
       </Tabs>

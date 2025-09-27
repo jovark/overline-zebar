@@ -40,6 +40,7 @@ function App() {
   const [marginX] = useWidgetSetting('main', 'marginX');
   const [paddingLeft] = useWidgetSetting('main', 'paddingLeft');
   const [paddingRight] = useWidgetSetting('main', 'paddingRight');
+  const [workspacesEnabled] = useWidgetSetting('main', 'workspacesEnabled');
 
   return (
     <div

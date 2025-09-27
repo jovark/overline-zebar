@@ -9,6 +9,7 @@ import {
   RootConfigSchema,
   ThemeSchema,
   WeatherThresholdSchema,
+  WorkspacesSchema,
 } from './zod-types';
 
 export type Theme = z.infer<typeof ThemeSchema>;
@@ -20,3 +21,4 @@ export type AllWidgetSettings = z.infer<typeof AllWidgetSettingsSchema>;
 export type RootConfig = z.infer<typeof RootConfigSchema>;
 export type ProviderSettings = z.infer<typeof ProviderSettingsSchema>;
 export type LauncherCommand = z.infer<typeof LauncherCommandSchema>;
+export type WorkspacesSettings = z.infer<typeof WorkspacesSchema>;
